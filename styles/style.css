@@ -1,2 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+html {
+    font-family: Inter;
+}
+
+:root{
+    --color-green-accent: #C4F82A;
+    --color-main-bg: #141414;
+    --color-main-card: #1f1f1f;
+    --color-main-button: #333;
+    --font-size-name: 1.5rem;
+    --font-size-location: 1rem;
+    --font-weight-name: bold;
+    --line-height-default: 150%;
+    --padding-default: 1.5rem;
+    --margin-big: 2rem;
+    --margin-small: 1rem;
+    --gap-default: 1rem;
+    --image-size: 5.2rem;
+    --size-card: 384px;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials__box{
+    background-color: var(--color-main-card);
+    width: min(var(--size-card), 80%);
+    text-align: center;
+    padding: var(--padding-default);
+    border-radius: 1.5rem;
+}
+
+.social__photo{
+    justify-self: center;
+    border-radius: 50%;
+    margin-bottom: var(--margin-big);
+}
+
+.name__box{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-default);
+    margin-bottom: var(--margin-big);
+}
+
+.name{
+    font-size: var(--font-size-name);
+    color: #fff;
+    font-weight: var(--font-weight-name);
+}
+
+.location{
+    font-size: var(--font-size-location);
+    color: var(--color-green-accent);
+    font-weight: var(--font-weight-name);
+}
+
+.description{
+    color: #f1f1f1;
+    margin-bottom: var(--margin-big);
+}
+
+.links__box ul{
+    list-style-type: none;
+    font-weight: var(--font-weight-name);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-default);
+}
+
+.link__item a {
+    color: #fff;
+    display: block;
+    background-color: var(--color-main-button);
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+
+.link__item a:hover{
+    transition: .3s;
+    background-color: var(--color-green-accent);
+    color: var(--color-main-bg);
+}
